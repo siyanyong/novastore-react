@@ -14,7 +14,7 @@ services:
       - ./novastore-react:/home/novastore-react
       - deploy_html:/var/www/html  # shared with nginx
     environment:
-      - JAVA_OPTS=-Djenkins.install.runSetupWizard=false
+      - JAVA_OPTS=-Djenkins.install.runSetupWizard=true
 
   nginx:
     image: nginx:alpine
