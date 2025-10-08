@@ -46,6 +46,7 @@ pipeline {
             steps {
                 echo "Deploying to Nginx..."
                 sh """
+                    mkdir -p ${DEPLOY_DIR}
                     rm -rf ${DEPLOY_DIR}/*
                     cp -r ${PROJECT_DIR}/${BUILD_DIR}/* ${DEPLOY_DIR}/
                 """
