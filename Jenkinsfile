@@ -8,7 +8,7 @@ pipeline {
     environment {
         PROJECT_DIR = 'novastore-react'      // Directory of your Vite project
         BUILD_DIR = 'dist'                   // Vite outputs to dist/
-        DEPLOY_DIR = '/var/www/html'         // Shared volume with Nginx
+        DEPLOY_DIR = '/var/www/site'         // Shared volume with Nginx
     }
 
     stages {
