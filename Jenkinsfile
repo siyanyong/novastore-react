@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools {
+        nodejs 'Node 18' // Match the name you set in Global Tool Config
+    }
+
     environment {
         PROJECT_DIR = 'novastore-react'      // Directory of your Vite project
         BUILD_DIR = 'dist'                   // Vite outputs to dist/
